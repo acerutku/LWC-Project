@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="if true false kullanimi">
+
+        <h1>flag = {flag}</h1><!-- 3-flag in durumunu gormek icin sonradan ekledik -->
+
+        <template if:true={flag}> <!-- 2- tirnaklari silip variable i ekledik (js) -->
+            <h1>flag true, bu mesaj goruldu</h1>
+        </template>
+    </lightning-card>
+
+    <lightning-card title="Sozlesme">
+        <template if:false={display}>
+            <h1>Lutfen Sozlemeyi Kabul Ediniz</h1>
+        </template>
+        <lightning-input type="checkbox" label="Kabul Et" onchange={handlerOnchange}></lightning-input>
+    </lightning-card>
+
+
+
+
+
+
+</template>

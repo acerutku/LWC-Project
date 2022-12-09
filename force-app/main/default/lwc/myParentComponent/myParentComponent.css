@@ -1,0 +1,19 @@
+h1{
+    color: red;
+    background-color: bisque;
+}
+p{
+    color: green;
+    background-color: slateblue;
+}
+/* child'in icindeki tum elementlerin rengini bir BUTUN olarak degistirelim */
+c-my-child-component{
+    color: blueviolet;
+    /* DIKKAT: renk degiskeni child'in cagirildigi alanda kullanilmalidir */
+    --renk: rgb(245, 243, 243);
+    --custom-bg-color: black;
+
+}
+/* c-my-child-component h1{
+    color: coral;
+}  Bu CALISMAZ. Child'in icindeki elementleri parent'tan ancak bir butun halinde degistirebiliriz*/

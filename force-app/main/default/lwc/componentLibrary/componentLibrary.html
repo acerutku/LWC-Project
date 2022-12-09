@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  title="Hello">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <p class="slds-var-p-horizontal_small">Card Body (custom component)</p>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+    <lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"></lightning-avatar>
+    <lightning-checkbox-group name="Checkbox Group"
+                              label="Checkbox Group"
+                              options={options}
+                              value={value}
+                              onchange={handleChange}></lightning-checkbox-group>
+    <p>Selected Values are: {selectedValues}</p>
+    <lightning-button variant="success" label="Success" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    
+</template>

@@ -1,0 +1,9 @@
+<aura:component>
+
+<aura:registerEvent name="myEvent" type="c:firstEvent"/>
+<!-- Suan firstEvent'ine register olduk -->
+
+<div>Merhaba.Child Component'tan geldim</div>
+<lightning:button name="fireEvent" label="Fire Event" onclick="{!c.onclickHandler}"/>
+
+</aura:component>	

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="iteration">
+        <template iterator:it={sehirler}> <!-- for item kullanmayacagiz -->
+            <div key={it.value}>{it.value}</div>
+        </template> 
+    </lightning-card>
+    <lightning-card title="it first last">
+
+        <template iterator:it={sehirler}>
+            <!-- 1.yol -->
+            <!--   <p key={it.value} if:true={it.first}>{it.value}</p>  ilk data'yi 1 kere en basta goster -->
+            <!--  <p key={it.valie} if:true={it.last}>{it.value}</p> son datayi 1 kere en sonda goster -->
+            <!-- 2. yol -->
+            <p key ={it.value} if:true={it.first}>*************</p>
+            <p key={it.value}>{it.value}</p>
+            <p key ={it.value} if:true={it.last}>*************</p>
+
+        </template>
+    
+    </lightning-card>
+</template>

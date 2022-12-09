@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+<aura:attribute name="parentAttr" type="String" default="default value"/>
+
+<lightning:card>
+
+<lightning:button name="changeValue" label="Change Parent" onclick="{!c.onclickHandler}"/>
+<div>Parent attribute = {!v.parentAttr}</div>
+
+<c:child1Aura childAttr="{!v.parentAttr}"/> <!-- Bound expression budur -->
+</lightning:card>
+
+</aura:component>	

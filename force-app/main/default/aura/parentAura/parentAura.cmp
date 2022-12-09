@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes"><!-- 2- implementi unutma -->
+
+    <p>I m Parent</p>
+    <c:childAura child1= "parent armut"></c:childAura>
+
+    
+
+</aura:component>	

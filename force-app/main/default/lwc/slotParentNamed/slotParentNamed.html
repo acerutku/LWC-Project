@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Slot Parent">
+                            
+        <h1>1.Parent Header</h1>
+                            
+        <c-slot-child>                    
+        <h1>5.Child Slot Header</h1>
+        <p>6.Child Slot Paragraf</p>
+        </c-slot-child>
+        <p>4.parent paragraf</p>
+        <!-- 3 child i cagir ve deploy -->
+        <c-slot-child-named>
+        <!-- 4 parent taki child icine yeni tagler ekle ve bunlari gormek icin slotChildNamed html icine giriniz -->
+            <span slot="s">Serkan</span> <!-- 6 slotlari isimlendirelim -->
+            <span slot="a">Ayse</span>
+            <span slot="h">Hasan</span><!-- 8-child da cahirilmazsa gozukmez -->
+        </c-slot-child-Named>
+
+    </lightning-card>
+</template>

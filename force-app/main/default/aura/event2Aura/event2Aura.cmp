@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+<aura:handler event="c:secondEvent" action="{!c.handlerEvent}"/>
+<div>Ben ikinci component'im</div>
+
+</aura:component>	

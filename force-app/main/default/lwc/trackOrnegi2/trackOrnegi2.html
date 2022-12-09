@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Track Ornegi 2">
+        <!-- 1- Lightning input ve lightning buton olusturalim -->
+        <lightning-input type="number" label="Sayi ekleyiniz" onchange={onchangeHandler}></lightning-input>
+        <lightning-button label="Ekle" onclick={ekleHandler}></lightning-button>
+
+        <!-- 6- Tum girilen sayilari dongu ile alip ekrana yazdiralim -->
+        <template for:each={lstValues} for:item="w">
+            <p key={w}>{w}</p>
+        </template>
+    </lightning-card>
+</template>

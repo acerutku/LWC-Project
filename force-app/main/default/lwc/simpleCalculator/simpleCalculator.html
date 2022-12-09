@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Hesap Makinesi">
+    <lightning-input type="number" label="number 1" onchange={number1Handler}></lightning-input>
+    <lightning-input type="number" label="number 2" onchange={number2Handler}></lightning-input>
+        <lightning-button-group><!--1- butonlar grup halinde gorunsunler diye lightning-button-group actik -->
+            <lightning-button label="Toplama" onclick={toplama}></lightning-button>
+            <lightning-button label="Cikarma" onclick={cikarma}></lightning-button>
+            <lightning-button label="Carpma" onclick={carpma}></lightning-button>
+            <lightning-button label="Bolme" onclick={bolme}></lightning-button>
+        </lightning-button-group>
+        <div>{result}</div> <!-- 2- sonucu bu div icinde gosterelim. JS icinde result'i olusturmaliyiz. -->
+        <!-- 6- GELISTIRME gecmis sonuclari da gorelim -->
+        <div> Onceki Sonuc: {gecmisDegerler}</div>
+        <!-- 10- GELISTIRME CHECKBOX koyalim ve kullanici isterse eski degerleri gorsun -->
+        <lightning-input type="checkbox" label="onceki" onchange={eskiDegerHandler}></lightning-input>
+        <!-- 11- DIKKAT: Template acip onceki ul'yi komple icine alalim -->
+
+        <template if:true={eskiDeger}><!-- 12- if:true olusturduk. JS'e git ve eskiDeger'i olustur -->
+            <!-- 9-GELISTIRME gecmis degerleri ayri satirlarda yazdiralim -->
+            <ul>
+                <template for:each={gecmisDegerler} for:item="w">
+                    <li key = {w}>
+                        {w}
+                    </li>
+                </template>
+            </ul>
+        </template>       
+    </lightning-card>
+    
+</template>

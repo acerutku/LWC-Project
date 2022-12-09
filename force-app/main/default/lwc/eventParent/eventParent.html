@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Ayni component daki standart event">
+        <!-- 1 -->
+    <lightning-button variant="base" 
+    label="Base" 
+    title="Looks like a link" 
+    onclick={handleClick} 
+    class="slds-m-left_x-small"></lightning-button>
+    <div class="slds-m-vertical_medium">
+        <p>The label of the button that was clicked is: <span class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+    </div>
+    </lightning-card>
+    <!-- b card olusturalim -->
+    <lightning-card title="Handle Child Event in Parent HTML">
+        <!-- C child i cagir -->
+        <c-event-child onclick={handleClick1}></c-event-child>
+    </lightning-card>
+
+    <lightning-card title="Handle Child Event in Parent JS">
+        <c-event-child1 onclick={handleClick2}></c-event-child1>
+    </lightning-card>
+</template>

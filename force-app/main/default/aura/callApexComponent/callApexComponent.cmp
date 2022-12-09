@@ -1,0 +1,7 @@
+<aura:component controller="ApexAura" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="message" type="String"/>
+    <lightning:button name="callApex" label="Call" onclick="{!c.getMessageHandler}"/>
+
+    <p>Apex Message = {!v.message}</p>
+
+</aura:component>	

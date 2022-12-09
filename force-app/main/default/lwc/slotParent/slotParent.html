@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Slot Parent">
+                            <!-- 1- Madde Isaretli tag'ler olusturalim -->
+        <h1>1.Parent Header</h1>
+                            <!-- 2-child component'i kebab case ile cagiralim -->
+        <c-slot-child>
+                            <!--5- parentta child i cagirdigim tag icine yeni tagler acarsam bunlar direk gorunmezler -->
+                            <!--6- bu taglerin gorunmesi icin child a gidip card icine slot yazmaliyiz -->
+        <h1>5.Child Slot Header</h1>
+        <p>6.Child Slot Paragraf</p>
+        </c-slot-child>
+                            <!-- 4- Parent icinde bir p tagi olusturalim -->
+        <p>4.parent paragraf</p>
+    </lightning-card>
+</template>

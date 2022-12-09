@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+<aura:handler name="myEvent" event="c:firstEvent" action="{!c.handleCaptureEvent}" phase="capture"/>
+<aura:handler name="myEvent" event="c:firstEvent" action="{!c.handleBubbleEvent}" phase="bubble"/>
+
+<div>Merhaba.Parent Component'dan geldim.</div>
+<c:eventChildAura/>
+
+</aura:component>	

@@ -1,0 +1,16 @@
+h1{
+    color: rgb(70, 45, 33);
+    background-color: rgb(38, 87, 87);
+}
+/* h2{ c) bu kod dinamik degil
+    color: yellow;
+} */
+
+/* d  styling hooks*/
+
+h2{
+    color: var(--renk, rgb(83, 28, 83));
+    background-color: var(--custom-bg-color,yellow);
+}
+/* let kullanilmaz cunku scoped bir elemandir */
+/* renk degiskenini artik parentta kullanabiliriz */

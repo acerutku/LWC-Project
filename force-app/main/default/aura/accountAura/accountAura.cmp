@@ -1,0 +1,14 @@
+<aura:component controller="ApexAura" implements="flexipage:availableForAllPageTypes">
+
+<aura:attribute name="acc" type="Account"/>
+
+<lightning:card>
+
+<!-- <lightning:button name="getAcc" label="Get Account" onclick="{!c.getAccHandler}"></lightning:button> -->
+<lightning:input onchange="{!c.onchangeHandler}"></lightning:input>
+<p>Account Name = {!v.acc.Name}</p>
+<p>Account Phone = {!v.acc.Phone}</p>
+
+</lightning:card>
+
+</aura:component>	

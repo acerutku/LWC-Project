@@ -1,0 +1,13 @@
+<template>
+    <!-- 1 -->
+    <lightning-card title="child 3">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input label="isim" placeholder="Isim giriniz" onchange={handleFirstName}></lightning-input>
+                <lightning-input label="soyisim" placeholder="Soyisim giriniz" onchange={handleLastName}></lightning-input>
+                <lightning-button label="Child3 button" onclick={handleClick3}></lightning-button>
+                <!-- 2-handleFirstName, handleLastName ve  handleClick3'u olusturmak icin child3.js'e git-->
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

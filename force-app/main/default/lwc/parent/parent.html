@@ -1,0 +1,29 @@
+<template>
+    <!-- 4- -->
+    <lightning-card title="Parent">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <!-- 5- child'i cagiralim. Custom  clicked'i yazalim ama basina on yazilmalidir-->
+                <c-child1 onclicked={handleButtonClick}></c-child1>
+                <!-- 6- -->
+                <h1>Event Name 1 : {eventName1}</h1>
+            </lightning-layout-item>
+
+
+            <!-- 7G- item olustur -->
+            <lightning-layout-item padding="around-small">
+                <!-- 8H- child'i cagir -->
+                <c-child2 onclicked2={handleButtonClick2}></c-child2>
+                <h1>Event Name 2: {eventName2}</h1>
+            </lightning-layout-item>
+
+
+            <lightning-layout-item padding="around-small">
+                <c-child3 onclicked3={handleButtonClick3}></c-child3>
+                <h1>Event Name 3: {eventName3}</h1>
+            </lightning-layout-item>
+
+            
+        </lightning-layout>
+    </lightning-card>
+</template>

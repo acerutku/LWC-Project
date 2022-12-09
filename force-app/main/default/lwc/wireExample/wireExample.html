@@ -1,0 +1,18 @@
+<template>
+    <!-- 10- Kalibi olusturalim -->
+    <lightning-card title="Search Account">
+        <lightning-input type="text" onchange={handleInput}></lightning-input>
+        <lightning-button label="Get Account" onclick={handleGetAccount}></lightning-button>
+        <!-- 11- listi gosterebilmek icin for each kullanalim  -->
+        <ul>
+            <template for:each={accounts} for:item="w"><!-- 12-class icindeki sorgu sonucu account un icindedir  --> <!-- F- Datayi sil Class a git -->
+                                <!-- accounts un icinde data ve error diye iki farkli veri vardir  -->
+                                <!-- sorgu basarili ise data nin , basarisiz ise error in ici doludur -->
+                                <li key={w.id}>
+                                    Name = {w.Name};
+                                    Tel:   {w.Phone};
+                                </li>    
+            </template>
+        </ul>
+    </lightning-card>
+</template>

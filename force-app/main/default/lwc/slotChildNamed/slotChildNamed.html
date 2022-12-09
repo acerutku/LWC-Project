@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Slot Child Named">
+            <!-- 1- card icinde aile yapisini olustur -->
+            <!-- 2- Sonrada bu child'i paret'tan kebab case ile cagir. -->
+        <h1>7.Aile Agaci</h1>
+        <!-- <h1>8. Father: Ali</h1> -->
+        <h1> 8.Father:<slot name="s"></slot></h1>
+        <!-- <h1>9.Mother: Fatma</h1> -->
+        <h1> 9.Mother:<slot name="a"></slot></h1>
+        <!-- <h1 >10.Child: Veli</h1> -->
+        <h1> 10.Child:<slot name="h"></slot></h1><!-- 7-parenttaki ozellestirilmis slot u cagirdik -->
+        <slot></slot><!-- 5- slot yazdik ki parent'ta child'in icine yazilan tag'ler gorunsun -->
+    </lightning-card>
+</template>
